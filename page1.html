@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.AGRO.com</title>
+    <link rel="icon" href="title.jpeg">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist\css\bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.2-dist\js\bootstrap.min.js"></script>
+    <script src="page1.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="line1">
+            <h6 id="t1">Welcome Visitor can you <a href="login1.php" class="t1"> Log In </a> or <a href="#" class="t1">Create a Account </a></h6>
+           <p>call us:(+91)7200826388</p>
+           <div class="line2"> 
+           <p><a href="sell.html" class="t2">Sell on Agro|</a></p>
+           <p><a href="#" class="t2">Bulk Order Inquiries|</a></p>
+           <p><a href="#" class="t2">Corporate Site</a></p>
+           </div>
+        </div>
+        <div class="line3">
+            <img src="logo.jpg" id="img1">
+                <div class="line4">
+                    <input type="text" placeholder="Search...">
+                    <img src="search1.jpg" class="btn btn-default">
+                 </div>
+
+                 <div class="line5">
+                       <img src="wishlist.png" class="wla"><a href="#"class="wla1">Wishlist</a>
+                       <img src="login.png" class="wla"><a href="login1.php"class="wla1">LogIn</a>
+                       <img src="add-to-cart.png" class="wla"><a href="cart.html" class="wla1">Cart</a>
+                </div>
+        </div>
+           <div class="line6">
+                    <marquee loop="5" behavior="alternate" direction="up" scrolldelay="200">
+                        <ul type="none">
+                            <li><a href="page3.html" class="c1">Seeds</a></li>
+                            <li><a href="page3.html" class="c1">Crop_Production</a></li>
+                            <li><a href="#" class="c1">Crop_Nutrition</a></li>
+                            <li><a href="#" class="c1">Organic</a></li>
+                            <li><a href="#" class="c1">Tapas</a></li>
+                            <li><a href="#" class="c1">Services</a></li>
+                            <li><a href="#" class="c1">Animal_Husbandary</a></li>
+                            <li><button onclick="updatetime()" id="date">VIEW TIME</button></li>
+                        </ul>
+                    </marquee>
+           </div>
+        <div class="line7">
+            <ul type="none">
+                <li class="cr1"><img src="image1.jpg" onclick="create()"></li>
+                <li class="cr1"><img src="image2.jpg" onclick="create1()"></li>
+                <li class="cr1"><img src="image3.jpg" onclick="create2()"></li>
+                <li class="cr1"><img src="image5.jpg" onclick="create3()"></li>
+                <li class="cr1"><img src="image6.jpg" onclick="create4()"></li>
+            </ul>
+        </div>
+        <div class="line8">
+            <ul type="none" id="gh">
+                <li><p id="gh1"></p></li>
+            </ul>
+        </div>
+           
+    </div>
+ <script>
+    function create(){
+        var ch=document.getElementById("gh1").innerHTML="1kg-250";
+    }
+    function create1(){
+        var ch=document.getElementById("gh1").innerHTML="1kg-500";
+    }
+    function create2(){
+        var ch=document.getElementById("gh1").innerHTML="1kg-750";
+    }
+    function create3(){
+        var ch=document.getElementById("gh1").innerHTML="1kg-1000";
+    }
+    function create4(){
+        var ch=document.getElementById("gh1").innerHTML="1kg-1200";
+    }
+
+ </script>
+</body>
+</html>
