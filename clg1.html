@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form register</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: palevioletred;
+        }
+
+        .main{
+              height:100vh;
+              display:flex;
+              align-items: center;
+              justify-content: center;
+              background-color:rgb(249, 208, 172);
+        }
+        .c1{
+            color:rgb(236, 20, 20);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Symposium Registration</h1>
+    <div class="main">
+        <form class="frame"> 
+            <label class="c1">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Enter Name"><br><br>
+            <label class="c1">Password</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" placeholder="password"><br><br>
+            <label class="c1">Retype-password</label>
+            <input type="password" placeholder="Re-Enter"><br><br>
+            <label class="c1">Branch</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            <select>
+                <option>NONE</option>
+                <option>Computer Science</option>
+                <option>Electrical</option>
+                <option>Information technology</option>
+                <option>Mechanical</option>
+            </select><br><br>
+            <label class="c1">Gender</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender"id="i1">Male
+            <input type="radio" name="gender" >Female<br><br>
+            <label class="c1">Event</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" >techincal
+            <input type="checkbox" >non-techincal<br><br>
+            <input type="button" value="Restart">
+            <input type="button" value="submit" id="btn" onclick="create()">
+            <input type="button" value="cancel">
+        </form>
+    </div>
+   <script>
+         var bt1=document.getElementById("btn");
+         function create()
+         {
+            window.open("clg2.html");
+         }
+         
+   </script>
+
+</body>
+</html>
